@@ -1,14 +1,14 @@
 <template>
   <div class="channeldata">
     <div class="messages">
-      <ChannelMessage author="Maikel Neris" date="12/03/1982" isBot hasMention>
-        <Mention>Maikel Neris</Mention>é um teste de mensagem!
-      </ChannelMessage>
       <ChannelMessage
         author="Fulano de Tal"
         date="12/03/1982"
         v-for="messages in 18"
       >Este é um teste de mensagem!</ChannelMessage>
+      <ChannelMessage ref="new" author="Maikel Neris" date="12/03/1982" isBot hasMention>
+        <Mention>Maikel Neris</Mention>é um teste de mensagem!
+      </ChannelMessage>
     </div>
     <div class="inputwrapper">
       <input type="text" placeholder="Conversar em #chat-livre" />

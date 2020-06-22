@@ -2,23 +2,23 @@
   <div class="container">
     <ServerButton isHome />
     <div class="separator"></div>
-    <ServerButton mentions="3" />
+    <ServerButton :mentions="3" />
     <ServerButton />
     <ServerButton hasNotification />
     <ServerButton />
     <ServerButton />
     <ServerButton />
-    <ServerButton mentions="4" hasNotification />
+    <ServerButton :mentions="4" hasNotification />
     <ServerButton />
     <ServerButton hasNotification />
     <ServerButton />
     <ServerButton />
-    <ServerButton mentions="32" hasNotification />
+    <ServerButton :mentions="35" hasNotification />
     <ServerButton />
     <ServerButton />
     <ServerButton />
     <ServerButton />
-    <ServerButton mentions="4" />
+    <ServerButton :mentions="4" />
     <ServerButton hasNotification />
     <ServerButton />
     <ServerButton />

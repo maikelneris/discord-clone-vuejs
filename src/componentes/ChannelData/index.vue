@@ -22,7 +22,7 @@
 <script>
 import Vue from "vue";
 import ChannelMessage from "./ChannelMessage";
-import At from "vue-material-design-icons/at";
+import At from "vue-material-design-icons/At";
 
 export default {
   components: {

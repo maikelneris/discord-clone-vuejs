@@ -2,9 +2,10 @@
   <div class="channeldata">
     <div class="messages">
       <ChannelMessage
-        author="Fulano de Tal"
+        :author="generateName()"
         date="12/03/1982"
         v-for="messages in 18"
+        :key="messages.id"
       >Este é um teste de mensagem!</ChannelMessage>
       <ChannelMessage ref="new" author="Maikel Neris" date="12/03/1982" isBot hasMention>
         <Mention>Maikel Neris</Mention>é um teste de mensagem!
@@ -24,10 +25,17 @@ import Vue from "vue";
 import ChannelMessage from "./ChannelMessage";
 import At from "vue-material-design-icons/At";
 
+import randomName from "../../data/names";
+
 export default {
   components: {
     ChannelMessage,
     At
+  },
+  methods: {
+    generateName() {
+      return randomName();
+    }
   }
 };
 

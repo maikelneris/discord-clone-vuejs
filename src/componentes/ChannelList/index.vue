@@ -7,10 +7,10 @@
       </div>
     </div>
     <ChannelButton selected channelName="chat-livre" />
-    <ChannelButton channelName="trabalho" />
-    <ChannelButton channelName="lolzinho" />
+    <ChannelButton channelName="vue-js" />
+    <ChannelButton channelName="jogos" />
     <ChannelButton channelName="csgo" />
-    <ChannelButton channelName="valorant" />
+    <ChannelButton channelName="react-js" />
   </div>
 </template>
 

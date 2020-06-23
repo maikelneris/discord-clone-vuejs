@@ -3,7 +3,7 @@
     class="serverbutton"
     :class="{'serverbutton-isHome': isHome, 'serverbutton-hasNotification': hasNotification }"
   >
-    <img src="../../assets/logo-rocketseat.svg" v-if="isHome" />
+    <img src="../../assets/discord.svg" v-if="isHome" />
     <div class="mentions" v-if="mentions">{{ mentions }}</div>
   </div>
 </template>
@@ -36,6 +36,7 @@ export default {
   img {
     width: 24px;
     height: 24px;
+    color: #fff;
   }
 
   &.active,

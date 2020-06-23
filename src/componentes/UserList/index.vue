@@ -4,15 +4,22 @@
     <UserRow nickname="Maikel Neris" />
     <div class="role">Offline - 18</div>
     <UserRow nickname="Joaquim Oliveira" isBot />
-    <UserRow nickname="Fulano de Tal" v-for="users in 24" />
+    <UserRow :nickname="generateName()" v-for="users in 24" :key="users.id" />
   </div>
 </template>
 
 <script>
 import UserRow from "./UserRow";
+import randomName from "../../data/names";
+
 export default {
   components: {
     UserRow
+  },
+  methods: {
+    generateName() {
+      return randomName();
+    }
   }
 };
 </script>

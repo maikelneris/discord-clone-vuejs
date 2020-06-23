@@ -7,21 +7,11 @@
     <ServerButton hasNotification />
     <ServerButton />
     <ServerButton />
-    <ServerButton />
+    <ServerButton :mentions="32" />
     <ServerButton :mentions="4" hasNotification />
     <ServerButton />
     <ServerButton hasNotification />
-    <ServerButton />
-    <ServerButton />
-    <ServerButton :mentions="35" hasNotification />
-    <ServerButton />
-    <ServerButton />
-    <ServerButton />
-    <ServerButton />
-    <ServerButton :mentions="4" />
-    <ServerButton hasNotification />
-    <ServerButton />
-    <ServerButton />
+    <ServerButton v-for="servers in 18" :key="servers.id" />
   </div>
 </template>
 

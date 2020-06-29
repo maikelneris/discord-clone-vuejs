@@ -38,6 +38,10 @@ export default {
     background-color: var(--mention-message);
     border-left: solid 2px var(--mention-detail);
   }
+
+  &:hover {
+    background-color: var(--quaternary);
+  }
 }
 
 .avatar {
